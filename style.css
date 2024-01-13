@@ -1,0 +1,214 @@
+ * {
+   box-sizing: border-box;
+ }
+   body {
+     font-family:cursive;
+     margin: 0;
+     padding: 0;
+     background: #3498db;
+ }
+ header {
+    margin: 5px;
+    width: 95%;
+    position: relative;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #f5f5f5;
+    box-shadow: 1px 2px 3px 1px;
+    display: inline-block;  
+ }
+  .header{  /*header class*/
+     font-family: Arial,sans-serif;
+     color: #fff;
+     position:relative;
+     top: 0px;
+     background: #090909;
+     width: 100vw; /* Change width to 100vw for 100% of viewport width */
+     color: #f6f6f6;
+     margin: 0;
+     text-align: center;
+     }
+     #menubtn{ 
+     transition: background.0.5s;
+     outline: none;
+     
+     }
+     #menubtn:hover { 
+     background: #090909;
+     
+     }
+     .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #292950;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+     }
+     
+     .sidenav a {
+	 padding: 15px;
+     text-decoration: none;
+     border-bottom: 1px solid gray;
+     height: 60px;
+     font-size: 20px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+     }
+     
+     .sidenav a:hover {
+    background: #3498db;
+    color: white;
+     }
+     
+     .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+     }
+     #themeSect {
+     display: none;
+     }
+     
+   button {
+   font-size: 20px;
+   cursor: pointer;
+   background-color: #3498db;
+   color: white;
+   padding: 10px 15px;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   transition: all 0.5s;
+   }
+   
+   button:hover {
+   color: #3498db;
+   border: 2px solid #3498db;
+   background: #fff;
+   
+   }
+   #theme {
+   padding: 15px;
+     border: 1px solid #030303;
+     border-radius: 5px;
+     outline: none;
+     background: #f3f3f3;
+   }
+   
+   #task-input-section {
+     margin: 5px;
+     padding: 15px;
+     border: 1px solid #030303;
+     border-radius: 5px;
+     display: none;
+     background: #f3f3f3;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);   
+    
+   }
+   #cancel-edittask {
+    border: none;
+    cursor: pointer;
+    background:transparent;
+   color: black;
+   position: absolute;
+   outline: none;
+   top: 147px;
+   
+   right: 20px;
+   font-size: 32px;
+   }
+  
+   #create-task > #task-input-section {
+   display: block;
+   
+   }
+   .addbtn {
+   
+   }
+   
+ .input-cnt {
+ display: flex; /* display the icon and the input in a line */
+ }
+ .input-cnt > .addbtn {
+ min-width: 90px; /* set a minimum width for the icon */
+ padding: 10px; /* make sure the icon is centered vertically */
+ text-align: center; /* horizontally center the icon */
+ background: white;
+ border: 1px solid lightgrey;
+ border-left: none;
+ border-top-right-radius: 20px;
+ border-bottom-right-radius: 20px;
+ }
+ /* style the input */
+ .input-cnt > input {
+ outline: none;
+ border: none;
+ width: 75%;
+ padding: 10px;
+ border-right: none;
+ border: 1px solid lightgrey;
+ border-top-left-radius: 20px;
+ border-bottom-left-radius: 20px;
+ }
+   
+   #task-list {
+      border: 1px groove #9eabfc;
+      margin: 5px;
+      padding: 15px;
+      text-align: center ;
+      border-radius: 5px;
+      background: transparent;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);     
+   }
+   .task {
+    font-weight: bold;
+    font-size: 23px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: Arial,sans-serif;
+    color: #fff;
+   // background: #f4f4f4;
+   }
+   #time {
+     font-size: 5px;
+     position:absolute;
+     top: 1px;
+     right: 3px;
+   
+   }
+  /* .task:hover {
+   text-decoration: line-through;
+   font-family: Arial,sans-serif;
+   } */
+   
+   .editbtn {
+   font-weight: normal;
+   outline: none;
+   color: #070707;
+   padding: 5px;
+   border-radius: 5px;
+   font-size: 13px;
+   width: 50px;
+   border: none;
+   }
+   .deletebtn {
+   font-weight: normal;
+   outline: none;
+   color: white;
+   padding: 5px;
+   border-radius: 5px;
+   font-size: 13px;
+   width: 50px;
+   border: none;
+   background: #070707;
+   }
+   

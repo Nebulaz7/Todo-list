@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nebula To-do list </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<script src="jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+  <div class="header" >
+  <h3><button id="menubtn" class="open-nav" onclick="openNav()" > &#9776;</button> 
+  Nebula's to-do list</h3>
+  
+ 		 <div id="menu_content" >
+  <div id="mySidenav" class="sidenav">
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onclick="setTheme" style="border: none;">&times;</a>
+  <h1 style="padding: 10px 8px;" > Settings </h1>
+  
+  <a href="#"  style="background: #3498db; color: white;" ><i class="fa-solid fa-notebook" ></i>Tasks</a>
+  
+  <a href="#" id="themebtn" ><i  class="fa-solid fa-brush" ></i> Themes ↓</a>
+  <div  id="themeSect" >
+  <input id="theme"  type="color" />
+  <button id="bgbtn">Set</button>
+  </div>
+  <a href="#" id="reset" ><i class="fa-solid fa-trash" ></i>Reset</a>
+  
+  <a href="https://nebulaz7.github.io/#"><i  class="fa-solid fa-file" ></i>Portfolio</a>
+  </div> 
+  </div>
+  
+  
+  </div>
+  <header>
+ <h1 id="intro" >To-do List</h1>
+ 
+<p>
+	<button>  <b style="font-size: 20px; font-weight: light;" onclick="show()" id="create-task"  >+ Create Task </b></button>
+	</p>
+
+    <div id="task-input-section">
+  
+  <h1>   <button id="cancel-edittask" onclick="hide()">&times;</button></h1>   
+  
+ <p class="input-cnt" > <input type="text" placeholder=" Add a task..." id="input" /><span class="addbtn"  > <button onclick="createTask()">Add</button></span>
+  		</p>
+  </div>
+  
+  </header>
+  
+
+
+ <div id="task-list"><p>Tasks</p></div>
+
+  
+  
+  <script src="script.js"></script>
+  
+  
+  
+
+</body>
+</html>
